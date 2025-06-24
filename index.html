@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <h1>Pet Paradise</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="products/">Товары</a></li>
+                    <li><a href="services/">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Все для ваших любимцев</h2>
+                    <p>Качественные корма, аксессуары и товары для ухода за домашними животными</p>
+                    <div class="hero-buttons">
+                        <a href="products/" class="btn btn-primary">Каталог товаров</a>
+                        <a href="services/" class="btn btn-outline">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero.jpg" alt="Домашние животные">
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2>Категории товаров</h2>
+                <div class="category-grid">
+                    <a href="products/dogs.html" class="category-card">
+                        <img src="images/dog-category.jpg" alt="Для собак">
+                        <h3>Для собак</h3>
+                        <p>Корм, игрушки, аксессуары</p>
+                    </a>
+                    <a href="products/cats.html" class="category-card">
+                        <img src="images/cat-category.jpg" alt="Для кошек">
+                        <h3>Для кошек</h3>
+                        <p>Корм, лотки, когтеточки</p>
+                    </a>
+                    <a href="products/rodents.html" class="category-card">
+                        <img src="images/rodent-category.jpg" alt="Для грызунов">
+                        <h3>Для грызунов</h3>
+                        <p>Клетки, корм, аксессуары</p>
+                    </a>
+                    <a href="products/birds.html" class="category-card">
+                        <img src="images/bird-category.jpg" alt="Для птиц">
+                        <h3>Для птиц</h3>
+                        <p>Корм, клетки, игрушки</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <div class="product-grid">
+                    <!-- Товар 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">-20%</div>
+                        <img src="images/product1.jpg" alt="Корм для собак">
+                        <div class="product-info">
+                            <h3>Корм для собак</h3>
+                            <p class="product-description">Премиум качество, 5 кг</p>
+                            <div class="product-price">
+                                <span class="current-price">2 499 ₽</span>
+                                <span class="old-price">3 099 ₽</span>
+                            </div>
+                            <button class="btn btn-primary">В корзину</button>
+                        </div>
+                    </div>
+                    <!-- Товар 2 -->
+                    <div class="product-card">
+                        <img src="images/product2.jpg" alt="Игрушка для кошек">
+                        <div class="product-info">
+                            <h3>Игрушка для кошек</h3>
+                            <p class="product-description">Перьевая удочка с мячиком</p>
+                            <div class="product-price">
+                                <span class="current-price">599 ₽</span>
+                            </div>
+                            <button class="btn btn-primary">В корзину</button>
+                        </div>
+                    </div>
+                    <!-- Товар 3 -->
+                    <div class="product-card">
+                        <div class="product-badge new">Новинка</div>
+                        <img src="images/product3.jpg" alt="Наполнитель для кошек">
+                        <div class="product-info">
+                            <h3>Наполнитель для кошек</h3>
+                            <p class="product-description">Древесный, 10 л</p>
+                            <div class="product-price">
+                                <span class="current-price">899 ₽</span>
+                            </div>
+                            <button class="btn btn-primary">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="products/" class="btn btn-outline">Все товары</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-paw"></i>
+                        <h3>Pet Paradise</h3>
+                    </div>
+                    <p>Лучший зоомагазин с широким ассортиментом товаров для ваших питомцев.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Категории</h4>
+                    <ul>
+                        <li><a href="products/dogs.html">Для собак</a></li>
+                        <li><a href="products/cats.html">Для кошек</a></li>
+                        <li><a href="products/rodents.html">Для грызунов</a></li>
+                        <li><a href="products/birds.html">Для птиц</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат и обмен</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина, 10</li>
+                        <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
+                        <li><i class="fas fa-envelope"></i> info@petparadise.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pet Paradise. Все права защищены.</p>
+                <div class="legal-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
