@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Услуги</title>
+    <meta name="description" content="Профессиональные услуги для ваших питомцев">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5",
+                        secondary: "#10b981",
+                        accent: "#f59e0b"
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-paw text-2xl text-primary"></i>
+                    <h1 class="text-xl font-bold text-gray-800">Pet Paradise</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Главная</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium">Товары</a>
+                    <a href="services.html" class="text-primary font-medium">Услуги</a>
+                    <a href="promotions.html" class="text-gray-700 hover:text-primary font-medium">Акции</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary font-medium">Контакты</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-primary">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-primary relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+                
+                <button class="md:hidden p-2 text-gray-600">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Наши услуги</h1>
+            <p class="text-xl max-w-2xl mx-auto">Профессиональный уход и забота о ваших любимцах</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-cut text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Груминг</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Наши профессиональные грумеры обеспечат вашему питомцу безупречный уход с использованием качественных косметических средств.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Стрижка и тримминг</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Мытье и сушка</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Уход за когтями и ушами</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Чистка зубов</li>
+                    </ul>
+                    <button class="bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-dark transition">Записаться</button>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-stethoscope text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Ветеринарные услуги</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Полный спектр ветеринарных услуг от профилактических осмотров до сложных медицинских процедур.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Консультации ветеринара</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Вакцинация</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Чипирование</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Лабораторные исследования</li>
+                    </ul>
+                    <button class="bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-dark transition">Записаться</button>
+                </div>
+                
+                <!-- More services... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8">Записаться на услугу</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Ваше имя</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Телефон</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Услуга</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option>Выберите услугу</option>
+                            <option>Груминг</option>
+                            <option>Ветеринарный осмотр</option>
+                            <option>Передержка</option>
+                            <option>Дрессировка</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Дата и время</label>
+                        <input type="datetime-local" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Дополнительная информация</label>
+                        <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-primary-dark transition">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-paw text-2xl text-primary"></i>
+                        <h3 class="text-xl font-bold">Pet Paradise</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Все для ваших любимых питомцев. Качественные товары и профессиональные услуги.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Магазин</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Товары</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Услуги</a></li>
+                        <li><a href="promotions.html" class="text-gray-400 hover:text-white">Акции</a></li>
+                        <li><a href="contacts.html" class="text-gray-400 hover:text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Помощь</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Доставка и оплата</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Возврат и обмен</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-gray-400 mr-2"></i> г. Москва, ул. Пушкина, 10</li>
+                        <li class="flex items-center"><i class="fas fa-phone text-gray-400 mr-2"></i> +7 (123) 456-78-90</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-gray-400 mr-2"></i> info@petparadise.ru</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Pet Paradise. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
