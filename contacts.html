@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise - Контакты</title>
+    <meta name="description" content="Контактная информация и расположение магазинов Pet Paradise">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#4f46e5",
+                        secondary: "#10b981",
+                        accent: "#f59e0b"
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-paw text-2xl text-primary"></i>
+                    <h1 class="text-xl font-bold text-gray-800">Pet Paradise</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium">Главная</a>
+                    <a href="products.html" class="text-gray-700 hover:text-primary font-medium">Товары</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary font-medium">Услуги</a>
+                    <a href="promotions.html" class="text-gray-700 hover:text-primary font-medium">Акции</a>
+                    <a href="contacts.html" class="text-primary font-medium">Контакты</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-primary">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-primary relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+                
+                <button class="md:hidden p-2 text-gray-600">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contacts Hero -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Контакты</h1>
+            <p class="text-xl max-w-2xl mx-auto">Мы всегда рады помочь вам и вашим питомцам</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Наши контакты</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Адрес</h3>
+                                <p class="text-gray-600">г. Москва, ул. Пушкина, 10</p>
+                                <p class="text-gray-600">г. Санкт-Петербург, Невский пр., 25</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Телефоны</h3>
+                                <p class="text-gray-600">+7 (123) 456-78-90 (Москва)</p>
+                                <p class="text-gray-600">+7 (987) 654-32-10 (СПб)</p>
+                                <p class="text-gray-600">Бесплатный номер: 8-800-123-45-67</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Электронная почта</h3>
+                                <p class="text-gray-600">info@petparadise.ru</p>
+                                <p class="text-gray-600">support@petparadise.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Часы работы</h3>
+                                <p class="text-gray-600">Пн-Пт: 9:00 - 21:00</p>
+                                <p class="text-gray-600">Сб-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Напишите нам</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Ваше имя</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Электронная почта</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Телефон</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Сообщение</label>
+                            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-primary-dark transition">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="py-0">
+        <div class="h-96 w-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789929732!2d37.61842331593095!3d55.75370398055248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LrQsA!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Часто задаваемые вопросы</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">Какой у вас график работы?</h3>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        <p>Наши магазины работают с понедельника по пятницу с 9:00 до 21:00, в субботу и воскресенье с 10:00 до 20:00.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">Есть ли у вас доставка?</h3>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden">
+                        <p>Да, мы осуществляем доставку по Москве и Санкт-Петербургу в течение 1-2 дней. Также доступна курьерская доставка в другие регионы России.</p>
+                    </div>
+                </div>
+                
+                <!-- More FAQ items... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-paw text-2xl text-primary"></i>
+                        <h3 class="text-xl font-bold">Pet Paradise</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Все для ваших любимых питомцев. Качественные товары и профессиональные услуги.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Магазин</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Товары</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Услуги</a></li>
+                        <li><a href="promotions.html" class="text-gray-400 hover:text-white">Акции</a></li>
+                        <li><a href="contacts.html" class="text-gray-400 hover:text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Помощь</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Доставка и оплата</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Возврат и обмен</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-gray-400 mr-2"></i> г. Москва, ул. Пушкина, 10</li>
+                        <li class="flex items-center"><i class="fas fa-phone text-gray-400 mr-2"></i> +7 (123) 456-78-90</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-gray-400 mr-2"></i> info@petparadise.ru</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Pet Paradise. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.bg-white.p-6.rounded-lg.shadow-md button');
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.classList.toggle('hidden');
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
